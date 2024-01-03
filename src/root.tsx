@@ -7,6 +7,7 @@ import {
 import { RouterHead } from "./components/router-head/router-head";
 
 import "./global.css";
+import { QwikPartytown } from "./components/partytown/partytown";
 
 export default component$(() => {
   /**
@@ -21,6 +22,7 @@ export default component$(() => {
       <head>
         <meta charSet="utf-8" />
         <link rel="manifest" href="/manifest.json" />
+        <QwikPartytown forward={['dataLayer.push']} />
         <RouterHead />
       </head>
       <body lang="en">
